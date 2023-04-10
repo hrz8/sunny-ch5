@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/styles/style-game.css">
+
+    <title>Rock-Paper-Scissor</title>
+</head>
+
+<body>
+    <section id="header">
+        <div class="container">
+            <nav id="nav-default" class="d-flex align-items-center">
+                <a href="/" class="back-button"><</a>
+                <img class="img-fluid" src="static/images/logo.png" alt="">
+                <h2 class="back-button">Rock Paper Scissor</h2>
+            </nav>
+        </div>
+    </section>
+
+    <section id="game-play">
+        <div class="container">
+            <div class="row text-center playing-box">
+                <div class="col-md-5 d-flex flex-column align-items-center">
+                    <h3>Player 1</h3>
+                    <div id="user">
+                        <button class="choice choice-rock" type="button" data-choice="rock">
+                            <img class="rps" src="static/images/batu.png" alt="">
+                        </button>
+                        <button class="choice choice-paper" type="button" data-choice="paper">
+                            <img class="rps" src="static/images/kertas.png" alt="">
+                        </button>
+                        <button class="choice choice-scissor" type="button" data-choice="scissor">
+                            <img class="rps" src="static/images/gunting.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-2 d-flex flex-column justify-content-end text-center">
+                    <div id="result">
+                        <div id="vs">
+                            <p>VS</p>
+                        </div>
+                        <div id="computer-wins" class="box">
+                            Computer Wins
+                        </div>
+                        <div id="user-wins" class="box">
+                            Player 1 Wins
+                        </div>
+                        <div id="draw" class="box">
+                            Draw
+                        </div>
+                    </div>
+                    <button id="reset-btn">
+                        <img class="reset" src="static/images/refresh.png" alt="">
+                    </button>
+                </div>
+                <div class="col-md-5 d-flex flex-column align-items-center">
+                    <h3>Com</h3>
+                    <div id="computer">
+                        <button class="choice choice-rock" type="button" data-choice="rock" disabled>
+                            <img class="rps" src="static/images/batu.png" alt="">
+                        </button>
+                        <button class="choice choice-rock" type="button" data-choice="paper" disabled>
+                            <img class="rps" src="static/images/kertas.png" alt="">
+                        </button>
+                        <button class="choice choice-rock" type="button" data-choice="scissor" disabled>
+                            <img class="rps" src="static/images/gunting.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="/static/scripts/game.js"></script>
+</body>
+
+</html>
