@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <h1>Hello, <%= name %></h1>
+        <p><%= lain %></p>
+        <% const age = 30 %>
+        <h3><%= age %></h3>
+        <% if (name === 'John') { %>
+            <p>hai kamu keren</p>
+        <% } %>
+        <% for (let i = 0; i < 5; i++) { %>
+            <p>user <%= i %></p>
+        <% } %>
+        <% users.forEach((user) => { %>
+            <p><%= user.username %></p>
+        <% }) %>
+    </body>
+</html>
